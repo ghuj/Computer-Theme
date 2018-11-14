@@ -1,0 +1,28 @@
+html(lang='en')
+  head
+  body
+    | !DOCTYPE html>
+    title DevTips Starter Kit
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='shortcut icon', href='./assets/img/favicons/favicon.ico')
+    link(rel='stylesheet', href='assets/css/main.css')
+    #container
+      #header
+        .logo  
+        ul#nav
+          li.active
+            a(href='startseite.html') Startseite
+          li
+            a(href='unser-betrieb.html') Unser Betrieb
+          li
+            a(href='leistungsangebot.html') Leistungsangebot
+          li
+            a(href='bildergallerie.html') Bildergallerie
+          li
+            a(href='kontakt.html') Kontakt   
+        #main
+          #content
+            img(src=' ./assets/img/tools.png', alt='foto', width='1000', height='550')
+    script(src='./vendors/jquery/dist/jquery.min.js')
+    script(src='./assets/js/app.js')
