@@ -4,4 +4,4 @@
 
  Project in progress
 
-![The Design](/assets/img/sketch.pdf)
+![The Design](/assets/img/sketch.jpg)
