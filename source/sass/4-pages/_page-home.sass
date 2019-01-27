@@ -1,4 +1,5 @@
 .container
+  display: grid
   max-width: 1000px
   margin: 0 auto
   background: #706156
@@ -6,19 +7,24 @@
   box-sizing: border-box	
 
 .content
+  display: grid
   margin: 3% auto
-  width: 100%
-  height: 78%
-  background-color: #cbc4b2
-  background-image: url(../img/tools.png) 
- 
+  max-width: 100%
+  width: 1000px
+  height: 600px
+  background-color: pink
+  background:
+    color: yellow
+    //image: url(../img/tools.png)   
+    //size: contain
+
 .header
   width: 100%
   overflow: hidden
   padding: 123px 0 15px
   border-bottom: 1px solid #cbc4b2
   position: relative
-  z-index: 3
+  z-index: 3n
   ul
     margin: 0
     padding: 0

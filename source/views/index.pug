@@ -1,28 +1,24 @@
 html(lang='en')
-  head
-  body#index   
+  head   
     title DevTips Starter Kit
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='shortcut icon', href='./assets/img/favicons/favicon.ico')
     link(rel='stylesheet', href='assets/css/main.css')
+  body
     .container      
       .header
         a.logo(href='')
           img(src='https://via.placeholder.com/50' alt='Italian Trulli')
-          | CSS Nav
+          | CSS Nav 
         input#menu-btn.menu-btn(type='checkbox')
         label.menu-icon(for='menu-btn')
           span.navicon
         ul.menu
-          li
-            a(href='#work') Our Work
-          li
-            a(href='#about') About
-          li
-            a(href='#careers') Careers
-          li
-            a(href='#contact') Contact       
+          li: a(href='#work') Our Work
+          li: a(href='#about') About
+          li: a(href='#careers') Careers
+          li: a(href='#contact') Contact       
       .content
           
     script(src='./vendors/jquery/dist/jquery.min.js')
