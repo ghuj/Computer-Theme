@@ -537,8 +537,7 @@ body {
   max-width: 100%;
   width: 1000px;
   height: 600px;
-  background-color: pink;
-  background-color: yellow;
+  background-color: #FFFFFF;
 }
 
 .header {
