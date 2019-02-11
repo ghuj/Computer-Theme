@@ -21,9 +21,9 @@ module.exports = function() {
     // they will be copied to the same dir on the build folder
     images: 'assets/img',
     /**
-     * Views directory. This is the dir where all the Jade files should live
-     * Important: only will be compiled *.jade files in this exact dir and not any sub dir
-     * you could use a subdir to put partials on it and include in jade.
+     * Views directory. This is the dir where all the Pug files should live
+     * Important: only will be compiled *.pug files in this exact dir and not any sub dir
+     * you could use a subdir to put partials on it and include in pug.
      */
     views: 'views/',
     /**
