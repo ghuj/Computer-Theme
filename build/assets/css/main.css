@@ -456,7 +456,7 @@ body {
 
 section {
   max-width: 980px;
-  height: 430px;
+  height: auto;
   margin-bottom: 30px;
   display: -ms-grid;
   display: grid;
@@ -603,6 +603,177 @@ img {
   border-bottom: 1px solid #cbc4b2;
   text-align: start;
   z-index: 3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  color: black;
+  background-color: #706156;
+  width: 1020px;
+  height: 520px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+#kopfbereich {
+  width: 100%;
+  overflow: hidden;
+  padding: 13px 0 15px;
+  border-bottom: 1px solid #FFF;
+}
+
+#logo {
+  color: black;
+  padding: 5px;
+  width: 233px;
+  float: left;
+}
+
+#navibereich {
+  margin-top: 80px;
+  text-align: right;
+  color: black;
+  float: left;
+}
+
+#navibereich ul {
+  margin-bottom: 0;
+}
+
+#navibereich li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+#navibereich a {
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border: 1px solid #8c8c8c;
+}
+
+#navibereich a:hover, #navibereich a:focus {
+  color: black;
+  background-color: white;
+  border-bottom-color: white;
+}
+
+#content-portfolio {
+  color: #FFFFFF;
+  background-color: #796b5f;
+  height: 100%;
+  width: 1024px;
+  padding: 60px 0 0 0;
+  margin: 20px 0 20px;
+}
+
+#textbereich {
+  color: #FFFFFF;
+  background-color: #706156;
+  width: 584px;
+  padding: 20px 0 0 20px;
+  float: right;
+}
+
+#foto {
+  color: #FFFFFF;
+  background-color: #706156;
+  padding: 0 20px 0 0px;
+  width: 400px;
+  float: left;
+}
+
+#foto img {
+  margin: 0 10px 0 10px;
+  border: 0 none;
+  max-width: 410px;
+  width: 510px;
+  height: 162px;
+}
+
+p {
+  font-size: 90%;
+}
+
+h1 {
+  font-size: 120%;
+}
+
+h2 {
+  font-size: 110%;
+}
+
+footer {
+  color: #FFFFFF;
+  padding-top: 10px;
+  border-top: 1px solid #FFF;
+  margin-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-top: 1px solid #FFF;
+  margin-top: 20px;
+}
+
+address {
+  text-align: center;
+  font-size: 80%;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 1,5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #d90000;
+}
+
+a:hover, a:focus {
+  border-bottom: 1px solid #d90000;
+}
+
+a:active {
+  color: white;
+  background-color: #d90000;
+}
+
+.skiplink {
+  position: absolute;
+  top: -2000px;
+  left: -3000px;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  display: inline;
+}
+
+#textbereich a {
+  border-bottom: 1px dotted #cc0000;
+}
+
+#textbereich a:hover, #textbereich a:focus {
+  border-bottom: 1px solid #d90000;
+}
+
+h1, h2, p, ul, ol {
+  margin-bottom: 1em;
+}
+
+ul ul {
+  margin-bottom: 0;
+}
+
+li {
+  font-size: 90%;
+  margin-left: 1em;
 }
 
 @media (max-width: 960px) {

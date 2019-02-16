@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  title DevTips Starter Kit
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")
+  link(rel="stylesheet", href="assets/css/main.css")
+section
+#wrapper
+  #kopfbereich
+    .skiplink
+      a(href='#textbereich') Zum Inhalt
+    #logo
+      img(src='../assets/img/logo.jpg' width='233' height='95' alt='kein')
+    #navibereich
+      ul
+        li#navi01
+          a(href='../index.html') Startseite
+        li#navi02
+          a(href='../Kontakt/untitled 1b2.html') Kontakt
+    // Ende navibereich
+  // Ende kopfbereich
+  #content-portfolio
+    #foto
+      img(src='../assets/img/slider/img1.jpg' alt='Italian Trulli') 
+      img(src='../assets/img/slider/img2.jpg' alt='Italian Trulli') 
+      img(src='../assets/img/slider/img3.jpg' alt='Italian Trulli') 
+    // Ende foto
+    #textbereich
+      h2  Sartseite
+      p  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+      h2 Lorem ipsum 
+      ul
+        li  so funktioniert HTML 
+        li  Wichtige HTML- Element 
+        li  Gestalten mit CSS 
+      ul
+        li  so funktioniert HTML 
+        li  Wichtige HTML- Element 
+        li  Gestalten mit CSS  
+      h1 Lorem ipsum
+      p
+        | F&uuml;r Designer, Schriftsetzer, Layouter, Grafikenthusiasten und alle anderen.
+        | in Projekt startet und doch es gibt noch keinen Text, allerdings sollte das Layout schon bald pr&auml;sentiert werden ... was tun?
+        | Damit das Projekt gleich starten kann benutze einfach etwas Lorem ipsum - Blind-, F&uuml;ll-, Dummy-, Nachahmungs-, Platzhaltertext.Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+        | Generiere einfach soviel Lorem Ipsum Text orem Ipsum Text Lorem ipsum wie du brauchst, kopiere und f&uuml;ge ihn in dein Layout als vor&uuml;bergehenden Platzhalter ein. Somit sieht das Projekt ein St&uuml;ckchen vollst&auml;ndiger aus als zuvor.
+      p Viel Spa&szlig; dabei.
+    // Ende textbereich
+  // Ende content
+  footer
+    p Das ist ein Test
+    p
+// Ende wrapper
+script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+script.
+  window.jQuery || document.write('<script src="js/libs/jquery-1.11.0.min.js"><\\/script>')
+script(src='js/script.js')
+//if lt IE 7 
+  script(src='//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js')
+  script.
+    window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})
