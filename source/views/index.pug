@@ -6,25 +6,19 @@ head
   meta(name="viewport", content="width=device-width, initial-scale=1")
   link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")
   link(rel="stylesheet", href="assets/css/main.css")
-body
-    .container  
-      section   
-        .header
-          a.logo(href='')
-            img(src='https://via.placeholder.com/50' alt='Italian Trulli')
-            | CSS Nav
-          input#menu-btn.menu-btn(type='checkbox')
-          label.menu-icon(for='menu-btn')
-            span.navicon
-          ul.menu
-            li: a(href='#work') Our Work
-            li: a(href='#about') About
-            li: a(href='#careers') Careers
-            li: a(href='#contact') Contact                 
-        .content
-          .footer  
-            p 2019 @ Copyright Thomas Lanza All rights reserved
-      section
-        
-    script(src='./vendors/jquery/dist/jquery.min.js')
-    script(src='./assets/js/app.js')
+body    
+  section   
+    .header  
+      .logo   
+      .navbar
+        a(href='#about-me') About Me
+        a(href='#work') Work
+        a(href='#clients') Clients
+        a(href='#contact') Contact           
+    .content
+    .footer  
+      p 2019 @ Copyright Thomas Lanza All rights reserved
+  section
+      
+  script(src='./vendors/jquery/dist/jquery.min.js')
+  script(src='./assets/js/app.js')

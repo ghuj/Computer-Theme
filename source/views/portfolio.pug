@@ -7,20 +7,18 @@ head
   link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")
   link(rel="stylesheet", href="assets/css/main.css")
 section
-#wrapper
-  #kopfbereich
-    .skiplink
-      a(href='#textbereich') Zum Inhalt
-    #logo
-      img(src='../assets/img/logo.jpg' width='233' height='95' alt='kein')
-    #navibereich
-      ul
-        li#navi01
-          a(href='../index.html') Startseite
-        li#navi02
-          a(href='../Kontakt/untitled 1b2.html') Kontakt
-    // Ende navibereich
-  // Ende kopfbereich
+  .header    
+    a.logo(href='')
+      img(src='https://via.placeholder.com/50' alt='Italian Trulli')
+      | CSS Nav
+    input#menu-btn.menu-btn(type='checkbox')
+    label.menu-icon(for='menu-btn')
+      span.navicon
+    ul.menu
+      li: a(href='#index') index
+      li: a(href='#about') About
+      li: a(href='#careers') Careers
+      li: a(href='#contact') Contact  
   #content-portfolio
     #foto
       img(src='../assets/img/slider/img1.jpg' alt='Italian Trulli') 
@@ -48,7 +46,7 @@ section
       p Viel Spa&szlig; dabei.
     // Ende textbereich
   // Ende content
-  footer
+  .footer
     p Das ist ein Test
     p
 // Ende wrapper

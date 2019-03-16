@@ -1,0 +1,61 @@
+.header
+  width: 100%
+  overflow: hidden
+  padding: 123px 0 15px
+  border-bottom: 1px solid #cbc4b2
+  position: relative
+  display: flex
+
+  .logo
+    width: 326px
+    height: 95px
+    background: 
+      image: url(../img/logo.jpg)
+      repeat: none  
+      text-indent: -9999px
+      overflow: hidden
+    //float: left
+    //flex-direction: column
+      a
+      display: block
+      height: 100%
+
+.navbar
+  width: 100%
+  margin: 51px -3px 0 0  
+  font: 16px/18px 'CenturyGothicRegular', Arial, Helvetica, sans-serif
+  text-transform: uppercase
+  text-align: end
+  letter-spacing: -1px
+  li   
+    padding: 0 20px 0 0
+  a
+    margin: 10px
+    text-decoration: none
+    &:hover
+      color: #fff
+  .active a
+    color: #fff
+
+#lang
+  position: absolute
+  right: -10px
+  top: 130px
+  font: 14px/18px 'CenturyGothicRegular', Arial, Helvetica, sans-serif        
+
+@media (max-width: 960px)
+
+  .header
+    height: 100%
+    padding: 0px
+    display: inline  
+    flex: 25%
+  
+  .logo
+    background:      
+      repeat: none  
+  
+  .navbar  
+    display: inline
+    width: 5%
+    height: 5%

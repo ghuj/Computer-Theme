@@ -1,0 +1,112 @@
+.header
+  display: flex
+  flex-direction: column
+  display: block
+  position: relative
+  width: 100%
+  z-index: 4
+  ul
+    width: 960px  
+    position: fixed  
+    margin: 0
+    padding: 0
+    list-style: none
+    overflow: hidden
+    background-color: #fff
+    text-align: center
+  li a
+    font-family: 'Source Sans Pro', sans-serif
+    font-size: 18px  
+    display: block
+    padding: 20px 20px
+    border-right: 1px solid #f4f4f4
+    text-decoration: none
+    color:#000
+    &:hover
+      background-color: #f4f4f4
+  .menu-btn:hover
+    background-color: #f4f4f4
+  .logo
+    flex-direction: column
+    font-size: 2em
+    padding: 10px 20px
+    text-decoration: none
+    text-align: center
+
+img
+  margin: 0 10px 0 10px
+  vertical-align: middle
+  border: 0 none
+  max-width: 250px
+
+/* menu
+
+.header
+  .menu
+    clear: both
+    max-height: 0
+    transition: max-height .2s ease-out
+  .menu-icon
+    cursor: pointer
+    display: inline-block
+    float: right
+    padding: 28px 20px
+    position: relative
+    user-select: none
+    .navicon
+      background: #333
+      display: block
+      height: 2px
+      position: relative
+      transition: background .2s ease-out
+      width: 18px
+      &:before, &:after
+        background: #333
+        content: ''
+        display: block
+        height: 100%
+        position: absolute
+        transition: all .2s ease-out
+        width: 100%
+      &:before
+        top: 5px
+      &:after
+        top: -5px
+  .menu-btn
+    display: none
+    &:checked ~
+      .menu
+        max-height: 940px
+        height: 930px
+      .menu-icon
+        .navicon
+          background: transparent
+          &:before
+            transform: rotate(-45deg)
+          &:after
+            transform: rotate(45deg)
+        &:not(.steps) .navicon
+          &:before, &:after
+            top: 0
+
+/* menu icon
+
+/* menu btn
+
+/* 48em = 768px
+
+@media (min-width: 88em)
+  .header
+    ul
+      background-color: pink
+    li
+      float: left
+      a
+        padding: 20px 30px
+        
+    .menu
+      clear: none
+      float: right
+      max-height: none
+    .menu-icon
+      display: none
