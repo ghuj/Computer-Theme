@@ -542,37 +542,34 @@ section {
   background-size: cover;
 }
 
-img {
-  margin: 0 10px 0 10px;
-  vertical-align: middle;
-  border: 0 none;
-  max-width: 250px;
-}
-
 * {
   padding: 0;
   margin: 0;
 }
 
-#content-portfolio {
-  width: 930px;
-  height: 490px;
+#portfolio-wrapper {
+  width: 100%;
+  height: auto;
+  margin: 15px 0px;
+  background-color: #796b5f;
+}
+
+#portfolio-content {
   display: -ms-flexbox;
   display: flex;
   color: #FFFFFF;
-  background-color: #796b5f;
-  padding: 60px 0 0 0;
-  margin: 20px 0 20px;
+  margin: 15px 0 16px;
+  padding: 50px 0;
   font-size: 90%;
   color: #FFFFFF;
 }
 
-#content-portfolio h1 {
+#portfolio-content h1 {
   font-size: 120%;
   color: #FFFFFF;
 }
 
-#content-portfolio h2 {
+#portfolio-content h2 {
   font-size: 110%;
   color: #FFFFFF;
 }
@@ -580,22 +577,18 @@ img {
 #textbereich {
   color: #FFFFFF;
   background-color: #706156;
-  height: 470px;
-  padding: 20px 20px;
+  padding: 10px 0 5px 10px;
 }
 
 #foto {
-  color: #FFFFFF;
-  padding: 0 20px 0 0px;
-  width: 400px;
+  width: 420px;
+  height: 149px;
 }
 
 #foto img {
-  margin: 0 10px 0 10px;
-  border: 0 none;
-  max-width: 410px;
-  width: 510px;
-  height: 162px;
+  width: 420px;
+  height: 149px;
+  display: block;
 }
 
 address {
@@ -670,11 +663,18 @@ li {
     background-image: cover;
     background-position: center;
   }
+
+  .content img {
+    margin: 0 10px 0 10px;
+    vertical-align: middle;
+    border: 0 none;
+    max-width: 250px;
+  }
 }
 
 @media (max-width: 600px) {
 
-  #content-portfolio {
+  #portfolio-content {
     max-width: 100%;
     width: 100%;
     -ms-flex-direction: column;
@@ -683,14 +683,14 @@ li {
     background-color: #716150;
   }
 
-  #content-portfolio #textbereich {
+  #portfolio-content #textbereich {
     max-width: 100%;
     width: 90vw;
     -ms-flex-order: 1;
         order: 1;
   }
 
-  #content-portfolio #foto {
+  #portfolio-content #foto {
     max-width: 100vw;
     width: 100vw;
     text-align: center;
@@ -701,7 +701,7 @@ li {
     display: inline-block;
   }
 
-  #content-portfolio #foto img {
+  #portfolio-content #foto img {
     width: 100%;
     display: inline-block;
   }
