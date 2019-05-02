@@ -3,14 +3,17 @@
   padding: 0
   margin: 0
 
-#content-portfolio
-  width: 930px
-  height: 490px
+#portfolio-wrapper
+  width: 100%
+  height: auto 
+  margin: 15px 0px
+  background-color: #796b5f
+
+#portfolio-content  
   display: flex     
   color: #FFFFFF
-  background-color: #796b5f
-  padding: 60px 0 0 0
-  margin: 20px 0 20px
+  margin: 15px 0 16px  
+  padding: 50px 0
   p
   font-size: 90%
   color: #FFFFFF
@@ -24,20 +27,16 @@
 #textbereich
   color: #FFFFFF
   background-color: #706156 
-  height: 470px
-  padding: 20px 20px  
-
-#foto
-  color: #FFFFFF  
-  padding: 0 20px 0 0px
-  width: 400px  
+  padding: 10px 0 5px 10px
+    
+#foto    
+  width: 420px
+  height: 149px
   img
-    margin: 0 10px 0 10px    
-    border: 0 none
-    max-width: 410px  
-    width: 510px
-    height: 162px
-
+    width: 420px
+    height: 149px
+    display: block 
+          
 // navigation unten  
 address
   text-align: center
@@ -72,7 +71,7 @@ li
 
 @media (max-width: 600px)
 
-  #content-portfolio
+  #portfolio-content
     max-width: 100%
     width: 100%
     flex-direction: column
