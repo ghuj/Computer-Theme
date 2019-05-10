@@ -525,8 +525,10 @@ body {
 
 section {
   position: relative;
+  max-width: 960px;
+  width: 100vw;
   height: auto;
-  margin: 0 50px;
+  margin: 0 auto;
   margin-bottom: 30px;
   display: -ms-grid;
   display: grid;
@@ -548,10 +550,15 @@ section {
 }
 
 .page-artmax {
-  width: 100vw;
+  max-width: 540px;
   height: 100%;
   margin-top: 40px;
-  padding: 74px;
+}
+
+.page-logo {
+  max-width: 540px;
+  height: 100%;
+  margin-top: 40px;
 }
 
 .article-vertikal {
@@ -560,15 +567,72 @@ section {
   padding: 20px;
 }
 
+.article-horizontal {
+  width: 930px;
+  height: 100%;
+  padding: 20px;
+}
+
 .image {
+  position: absolute;
+  top: 30%;
+  left: 75%;
   height: 100%;
   width: 100%;
   color: white;
-  position: absolute;
-  top: 30%;
-  left: 50%;
   background-image: url(../img/bild.png);
   background-repeat: no-repeat;
+}
+
+.navigation {
+  position: relative;
+  width: 100vw;
+  height: 150px;
+  margin-top: 140px;
+  padding: 100px 200px;
+  background-color: #F3F7F8;
+}
+
+button {
+  width: 250px;
+  height: 38px;
+  background-color: #BFD363;
+  color: #000;
+  border: none;
+  margin: 3%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.page-logo {
+  width: 100vw;
+  height: 100%;
+  margin-top: 40px;
+  padding: 74px;
+}
+
+.gallery {
+  max-width: 1210px;
+  margin: auto;
+}
+
+.cgallery:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.picture-container {
+  float: left;
+  padding: 0.5%;
+  width: 24%;
+  height: 100%;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  display: table;
 }
 
 * {
@@ -702,6 +766,11 @@ li {
 }
 
 @media (max-width: 600px) {
+
+  .picture-container {
+    padding: 0.5%;
+    width: 32.33333333%;
+  }
 
   #portfolio-content {
     max-width: 100%;
