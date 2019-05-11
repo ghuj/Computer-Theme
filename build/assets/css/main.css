@@ -569,7 +569,6 @@ section {
 
 .article-horizontal {
   width: 930px;
-  height: 100%;
   padding: 20px;
 }
 
@@ -580,8 +579,6 @@ section {
   height: 100%;
   width: 100%;
   color: white;
-  background-image: url(../img/bild.png);
-  background-repeat: no-repeat;
 }
 
 .navigation {
@@ -616,7 +613,7 @@ button {
   margin: auto;
 }
 
-.cgallery:after {
+.gallery:after {
   content: "";
   clear: both;
   display: table;
@@ -633,6 +630,45 @@ button {
   width: 100%;
   height: 100%;
   display: table;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.footer-box {
+  width: 100px;
+  height: 200px;
+  margin: 10px auto;
+  padding: 10% 20% 10% 20%;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #666260;
+  border: 1px solid #c4beb9;
+  background: #fff;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 1em;
+  transition: all 0.3s ease-in-out;
+  width: 287px;
+}
+
+textarea {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #666260;
+  border: 1px solid #c4beb9;
+  background: #fff;
+  padding: 1em;
+  transition: all 0.3s ease-in-out;
 }
 
 * {
@@ -762,6 +798,32 @@ li {
     vertical-align: middle;
     border: 0 none;
     max-width: 250px;
+  }
+
+  section {
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 100%;
+    width: 100%;
+  }
+
+  .image {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+  }
+
+  .page-artmax {
+    margin-top: 180px;
+  }
+
+  .navigation {
+    max-width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
   }
 }
 
