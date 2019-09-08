@@ -574,34 +574,33 @@ section {
 
 .image {
   position: absolute;
-  top: 30%;
-  left: 75%;
+  top: 11%;
+  left: 83%;
   height: 100%;
   width: 100%;
   color: white;
   background-image: url(../img/bild.png);
-  background-repeat: none-repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .navigation {
   position: relative;
   width: 100vw;
-  height: 150px;
   margin-top: 140px;
   padding: 100px 200px;
   background-color: #F3F7F8;
 }
 
 button {
-  width: 250px;
+  width: 210px;
   height: 38px;
   background-color: #BFD363;
   color: #000;
   border: none;
   margin: 3%;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .page-logo {
