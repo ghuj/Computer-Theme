@@ -289,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 68px;
+  font-size: 72px;
   line-height: 1.05;
   letter-spacing: -1px;
   color: white;
@@ -320,6 +320,7 @@ small {
 
 p {
   margin: 0 0 20px 0;
+  color: #fff;
 }
 
 em {
@@ -404,7 +405,7 @@ input[type="button"]:focus {
 .navbar {
   width: 100%;
   margin: 51px -3px 0 0;
-  font: 16px/18px 'CenturyGothicRegular', Arial, Helvetica, sans-serif;
+  font: 16px/18px 'Fira Mono', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   text-align: end;
   letter-spacing: -1px;
@@ -427,6 +428,23 @@ input[type="button"]:focus {
   color: #fff;
 }
 
+.header_text {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.header_text h1 {
+  padding: 7%;
+  color: #fff;
+  display: inline-block;
+  z-index: 2;
+  font-size: 85px;
+  font-family: Fira sans;
+  font-weight: 400;
+  text-shadow: 2px 2px #666260;
+}
+
 .footer {
   overflow: hidden;
   color: #FFFFFF;
@@ -435,7 +453,6 @@ input[type="button"]:focus {
   overflow: hidden;
   padding: 15px 0 15px;
   border-top: 1px solid #cbc4b2;
-  border-bottom: 1px solid #cbc4b2;
   text-align: start;
   z-index: 3;
 }
@@ -511,7 +528,7 @@ input[type="button"]:focus {
 }
 
 body {
-  background-color: #6f6156;
+  background-color: #5f5955;
   color: #ffffff;
   overflow-x: hidden;
 }
@@ -537,14 +554,13 @@ section {
 .content {
   width: 930px;
   height: 490px;
-  display: block;
   background: #FFFFFF;
   margin: 20px auto;
-  padding: 10px 10px;
+  padding: 10px auto;
   text-align: center;
   text-decoration: none;
   color: grey;
-  background-image: url(../img/header.jpg);
+  background-image: url(../img/bg_header.jpg);
   background-repeat: none;
   background-size: cover;
 }
@@ -574,33 +590,34 @@ section {
 
 .image {
   position: absolute;
-  top: 11%;
-  left: 83%;
+  top: 30%;
+  left: 75%;
   height: 100%;
   width: 100%;
   color: white;
   background-image: url(../img/bild.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-repeat: none-repeat;
+  background-size: cover;
 }
 
 .navigation {
   position: relative;
   width: 100vw;
+  height: 150px;
   margin-top: 140px;
   padding: 100px 200px;
   background-color: #F3F7F8;
 }
 
 button {
-  width: 210px;
+  width: 250px;
   height: 38px;
   background-color: #BFD363;
   color: #000;
   border: none;
   margin: 3%;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .page-logo {
