@@ -14,17 +14,12 @@
       size: Contain
       repeat: no-repeat
       text-indent: -9999px
-      overflow: hidden
-    //float: left
-    //flex-direction: column
-      a
-      display: block
-      height: 100%
-
+      overflow: hidden    
+      
 .navbar
   width: 100%
   margin: 51px -3px 0 0  
-  font: 16px/18px 'CenturyGothicRegular', Arial, Helvetica, sans-serif
+  font: 16px/18px 'Fira Mono', Arial, Helvetica, sans-serif
   text-transform: uppercase
   text-align: end
   letter-spacing: -1px
@@ -38,11 +33,21 @@
   .active a
     color: #fff
 
-//#lang
-  position: absolute
-  right: -10px
-  top: 130px
-  font: 14px/18px 'CenturyGothicRegular', Arial, Helvetica, sans-serif        
+.header_text
+  width: 100%
+  height: 100%    
+  z-index: 1 
+  h1
+    //margin: 0px
+    padding: 7%
+    color: $white       
+    display: inline-block
+    z-index: 2
+    font-size: 85px
+    font-family: Fira sans
+    font-weight: 400
+    text-shadow:  2px 2px #666260
+    //border: black solid 10px
 
 .footer  
   overflow: hidden  
@@ -53,7 +58,7 @@
   //margin-top: 570px
   padding: 15px 0 15px
   border-top: 1px solid #cbc4b2
-  border-bottom: 1px solid #cbc4b2
+  //border-bottom: 1px solid #cbc4b2
   text-align: start
   z-index: 3
 
