@@ -533,13 +533,6 @@ body {
   overflow-x: hidden;
 }
 
-.page-home {
-  max-width: 100vw;
-  height: 100%;
-  text-align: center;
-  background-image: url(../img/hintergrund.jpg);
-}
-
 section {
   position: relative;
   max-width: 960px;
@@ -547,13 +540,24 @@ section {
   height: auto;
   margin: 0 auto;
   margin-bottom: 30px;
-  display: -ms-grid;
-  display: grid;
+}
+
+.page-home {
+  max-width: 100vw;
+  height: 100%;
+  text-align: center;
+  background-image: url(../img/hintergrund.jpg);
+  background-size: cover;
+}
+
+.row {
+  min-width: 960px;
+  width: 100%;
+  display: table;
+  padding: 10px;
 }
 
 .content {
-  width: 930px;
-  height: 490px;
   background: #FFFFFF;
   margin: 20px auto;
   padding: 10px auto;
@@ -581,6 +585,7 @@ section {
   width: 33vw;
   height: 100%;
   padding: 20px;
+  display: table-cell;
 }
 
 .article-horizontal {
@@ -589,15 +594,34 @@ section {
 }
 
 .image {
-  position: absolute;
-  top: 30%;
-  left: 75%;
-  height: 100%;
-  width: 100%;
-  color: white;
   background-image: url(../img/bild.png);
-  background-repeat: none-repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: Contain;
+  display: block;
+  width: 444px;
+  height: 327px;
+  margin: 30px auto;
+  position: relative;
+  display: table-cell;
+}
+
+.image:before, .image:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: auto;
+  background: black;
+  margin-top: -1px;
+}
+
+.image:before {
+  left: 100%;
+  margin-left: 20px;
+}
+
+.image:after {
+  right: 100%;
+  margin-right: 20px;
 }
 
 .navigation {
@@ -799,9 +823,11 @@ li {
     height: 5%;
   }
 
+  footer {
+    margin-left: 30px;
+  }
+
   section {
-    max-width: 100vw;
-    max-height: 100vh;
     height: 100%;
     width: 100%;
   }
