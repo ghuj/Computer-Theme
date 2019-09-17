@@ -1,15 +1,9 @@
+
+
 body  
-  background-color: #6f6156
+  background-color: $brown
   color: #ffffff
   overflow-x: hidden
-
-.page-home
-  max-width: 100vw
-  height: 100%
-  text-align: center 
-  background: 
-    image: url(../img/hintergrund.jpg)
-
 section 
   position: relative  
   max-width: 960px      
@@ -17,23 +11,35 @@ section
   height: auto  
   margin: 0 auto
   margin-bottom: 30px
-  display: grid   
+
+.page-home
+  max-width: 100vw
+  height: 100%
+  text-align: center 
+  background: 
+    image: url(../img/hintergrund.jpg)
+    size: cover
     
-.content
-  width: 930px
-  height: 490px
-  display: block
+.row   
+  min-width: 960px
+  width: 100% 
+  display: table
+  //lex-flow: row wrap
+  padding: 10px
+  //flex: 1 100%
+    
+.content  
   background: #FFFFFF   
   margin: 20px auto
-  padding: 10px 10px
+  padding: 10px auto
   text-align: center
   text-decoration: none
   color: grey
   background: 
-    image: url(../img/header.jpg)
+    image: url(../img/bg_header.jpg)
     repeat: none
     size: cover
-    
+  
 .page-artmax
   max-width: 540px 
   height: 100%
@@ -48,41 +54,61 @@ section
   width: 33vw
   height: 100%
   padding: 20px 
+  display: table-cell
 
 .article-horizontal
   width: 930px  
   padding: 20px 
 
 .image
-  position: absolute
-  top: 11%
-  left: 83%
-  height: 100%
-  width: 100%
-  color: white   
-  background: 
+  background:
     image: url(../img/bild.png)
     repeat: no-repeat
-    size: contain 
+    size: Contain
+  display: block
+  width: 444px
+  height: 327px
+  margin: 30px auto
+  position: relative
+  display: table-cell
+  
+  &:before,
+  &:after
+    content: ''
+    display: block
+    width: 100%
+    height: auto
+    background: black
+    position(absolute, 50% 0 0 0)
+    margin-top: -1px
+  
+  &:before
+    left: 100%
+    margin-left: 20px
+  
+  &:after
+    right: 100%
+    margin-right: 20px
+
 
 .navigation  
   position: relative
   width: 100vw
-  //height: 90px
+  height: 150px
   margin-top: 140px
   padding: 100px 200px
   background: 
     color: #F3F7F8
 
 button
-  width: 210px
+  width: 250px
   height: 38px
   background-color: #BFD363
   color: #000
   border: none
   margin: 3%
   text-align: center
-  font-size: 12px
+  font-size: 14px
 
 .page-logo
   width: 100vw
@@ -117,6 +143,11 @@ footer
   height: 100%
   background-color: #fff
 
+@media (max-width: 960px) 
+  footer
+    p
+    margin-left: 30px
+
 .footer-box  
   width: 100px
   height: 200px  
@@ -149,11 +180,9 @@ textarea
   
 @media (max-width: 960px)  
 
-  section
-    max-width: 100vw
-    max-height: 100vh
-    height: 100%
-    width: 100%  
+  section    
+  height: 100%
+  width: 100%  
 
   .container
     width: auto
