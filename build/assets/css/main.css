@@ -541,6 +541,8 @@ section {
 }
 
 .content {
+  height: 500px;
+  width: 960px;
   background: #FFFFFF;
   margin: 20px auto;
   padding: 10px auto;
