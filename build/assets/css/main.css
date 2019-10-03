@@ -605,30 +605,27 @@ article {
   height: 100%;
   margin-top: 40px;
   padding: 74px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .gallery {
-  max-width: 1210px;
-  margin: auto;
-}
-
-.gallery:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.picture-container {
-  float: left;
-  padding: 0.5%;
-  width: 24%;
-  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -ms-grid-columns: 100px 100px 100px;
+      grid-template-columns: 100px 100px 100px;
 }
 
 .picture {
-  width: 100%;
-  height: 100%;
-  display: table;
+  background-color: tomato;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 20px;
+  margin: 20px;
 }
 
 .contact {
