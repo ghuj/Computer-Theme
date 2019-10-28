@@ -456,7 +456,6 @@ input[type="button"]:focus {
 }
 
 .gallery {
-  width: 100%;
   height: auto;
   margin: 20px 20px;
   display: -ms-flexbox;
@@ -571,8 +570,7 @@ button {
 article {
   max-width: 960px;
   height: 100%;
-  margin: 40px 40px;
-  display: table-cell;
+  margin: 40px auto;
 }
 
 .contact {
