@@ -399,12 +399,9 @@ input[type="button"]:focus {
 
 .header {
   width: 100%;
-  overflow: hidden;
-  padding: 123px 0 15px;
-  border-bottom: 1px solid #cbc4b2;
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
+  height: 100px;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  z-index: 3;
 }
 
 .header .logo {
@@ -415,44 +412,107 @@ input[type="button"]:focus {
   background-repeat: no-repeat;
   background-text-indent: -9999px;
   background-overflow: hidden;
-}
-
-.navbar {
-  width: 100%;
-  margin: 51px -3px 0 0;
-  font: 16px/18px 'CenturyGothicRegular', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  text-align: end;
-  letter-spacing: -1px;
-}
-
-.navbar li {
-  padding: 0 20px 0 0;
-}
-
-.navbar a {
-  margin: 10px;
+  display: inline-block;
   text-decoration: none;
 }
 
-.navbar a:hover {
-  color: #fff;
-}
-
-.navbar .active a {
-  color: #fff;
-}
-
-.footer-header {
-  overflow: hidden;
-  color: #FFFFFF;
+/************ NAVIGATION ***********************/
+.header {
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
-  height: 30px;
-  overflow: hidden;
-  padding: 15px 15px 25px 15px;
-  border-top: 1px solid #cbc4b2;
-  text-align: start;
   z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header ul a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.header ul a:hover {
+  background-color: #ddd;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
 }
 
 .gallery {
@@ -500,8 +560,8 @@ section {
 }
 
 .content {
-  height: 500px;
   width: 960px;
+  height: 500px;
   background: #FFFFFF;
   margin: 20px auto;
   padding: 10px auto;
@@ -545,7 +605,7 @@ section {
   margin-top: 40px;
   background-image: url(../img/bild.png);
   background-repeat: no-repeat;
-  background-size: Contain;
+  background-size: cover;
   display: table-cell;
 }
 
@@ -745,26 +805,28 @@ li {
   margin-left: 1em;
 }
 
+@media (min-width: 1005px) {
+
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 9px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+}
+
 @media (max-width: 960px) {
-
-  .header {
-    height: 100%;
-    padding: 0px;
-    display: inline;
-    -ms-flex: 25%;
-        flex: 25%;
-  }
-
-  .logo {
-    background-size: Contain;
-    background-repeat: no-repeat;
-  }
-
-  .navbar {
-    display: inline;
-    width: 5%;
-    height: 5%;
-  }
 
   .gallery {
     margin: 0px 20px;
@@ -780,6 +842,26 @@ li {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
+  }
+
+  article {
+    padding: 100px 100px;
+    box-sizing: border-box;
+  }
+
+  footer {
+    margin-left: 30px;
+  }
+
+  footer {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 980px) {
+
+  .content {
+    width: 90%;
   }
 
   .picture {
@@ -805,19 +887,6 @@ li {
 
   .article-horizontal {
     width: 80%;
-  }
-
-  article {
-    padding: 100px 100px;
-    box-sizing: border-box;
-  }
-
-  footer {
-    margin-left: 30px;
-  }
-
-  footer {
-    margin-left: 0px;
   }
 }
 

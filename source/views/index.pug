@@ -6,16 +6,27 @@ head
   meta(name="viewport", content="width=device-width, initial-scale=1")
   link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")
   link(rel="stylesheet", href="assets/css/main.css")
-body    
+body
   .page-home
     section   
-      .header  
-        .logo   
-        .navbar
-          a(href='index.htm') Index
-          a(href='#work') Work
-          a(href='portfolio.html') Portfolio
-          a(href='#contact') Contact           
+      header.header
+        a.logo(href='index.html') 
+        input#menu-btn.menu-btn(type='checkbox')
+        label.menu-icon(for='menu-btn')
+          span.nav-icon
+        ul.menu
+          li
+            a(href='#dont') Home
+          li
+            a(href='#forget') Holz Art
+          li
+            a(href='#subscribe') Buchstaben
+          li
+            a(href='#comment') &amp; Hausnummerschilder
+          li
+            a(href='#comment') &amp; Awards & Ehrentafeln
+
+         
       .content
        <!-- h1| Holz Art-->
       .footer-header 

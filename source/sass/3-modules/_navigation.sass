@@ -1,10 +1,9 @@
 .header
   width: 100%
-  overflow: hidden
-  padding: 123px 0 15px
-  border-bottom: 1px solid #cbc4b2
-  position: relative
-  display: flex
+  height: 100px
+  //padding-top: 8px  
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1)
+  z-index: 3
 
   .logo
     width: 326px
@@ -15,61 +14,115 @@
       repeat: no-repeat
       text-indent: -9999px
       overflow: hidden
-    //float: left
+    display: inline-block
+    //padding: 10px 20px
+    text-decoration: none
     //flex-direction: column
       a
       display: block
       height: 100%
 
-.navbar
-  width: 100%
-  margin: 51px -3px 0 0  
-  font: 16px/18px 'CenturyGothicRegular', Arial, Helvetica, sans-serif
-  text-transform: uppercase
-  text-align: end
-  letter-spacing: -1px
-  li   
-    padding: 0 20px 0 0
-  a
-    margin: 10px
-    text-decoration: none
-    &:hover
-      color: #fff
-  .active a
-    color: #fff
+  
 
-//#lang
-  position: absolute
-  right: -10px
-  top: 130px
-  font: 14px/18px 'CenturyGothicRegular', Arial, Helvetica, sans-serif        
-
-.footer-header 
-  overflow: hidden  
-  color: #FFFFFF 
+/************ NAVIGATION ***********************/
+.header  
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1)  
   width: 100%
-  height: 30px
-  overflow: hidden  
-  //margin-top: 570px
-  padding: 15px 15px 25px 15px
-  border-top: 1px solid #cbc4b2  
-  text-align: start
   z-index: 3
 
-@media (max-width: 960px)
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    overflow: hidden
+    //background-color: #fff
 
-  .header
-    height: 100%
-    padding: 0px
-    display: inline  
-    flex: 25%
-  
+    a
+      display: block
+      padding: 20px
+      //border-right: 1px solid #aaa
+      text-decoration: none
+      font-family: Arial, Helvetica, sans-serif
+      font-size: 15px
+
+      &:hover
+        background-color: #ddd
+
   .logo
-    background: 
-      size: Contain
-      repeat: no-repeat
-      
-  .navbar  
-    display: inline
-    width: 5%
-    height: 5%
+    float: left
+    display: block
+    font-size: 2em
+    padding: 10px 20px
+
+  .menu
+    clear: both
+    max-height: 0
+    transition: max-height .2s ease-out
+
+  .menu-icon
+    padding: 28px 20px
+    position: relative
+    float: right
+    cursor: pointer
+
+    .nav-icon
+      background: $white
+      display: block
+      height: 2px
+      width: 18px
+      position: relative
+      transition: background .2s ease-out
+
+      &:before
+        background: $white
+        content: ""
+        display: block
+        height: 100%
+        width: 100%
+        position: absolute
+        transition: all .2s ease-out
+        top: 5px
+
+      &:after
+        background: $white
+        content: ""
+        display: block
+        height: 100%
+        width: 100%
+        position: absolute
+        transition: all .2s ease-out
+        top: -5px
+
+  .menu-btn
+    display: none
+
+    &:checked ~
+      .menu
+        max-height: 240px
+
+      .menu-icon .nav-icon
+        background: transparent
+
+        &:before
+          transform: rotate(-45deg)
+          top: 0
+
+        &:after
+          transform: rotate(45deg)
+          top: 0
+
+@media (min-width: 1005px)
+  .header
+    li
+      float: left
+
+      a
+        padding: 20px 9px
+
+    .menu
+      clear: none
+      float: right
+      max-height: none
+
+    .menu-icon
+      display: none
