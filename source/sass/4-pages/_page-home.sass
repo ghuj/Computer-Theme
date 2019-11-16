@@ -23,8 +23,8 @@ section
     size: cover
    
 .content 
-  height: 500px
   width: 960px
+  height: 500px  
   background: #FFFFFF   
   margin: 20px auto
   padding: 10px auto
@@ -65,10 +65,13 @@ section
   background:
     image: url(../img/bild.png)
     repeat: no-repeat
-    size: Contain     
+    size: cover   
   display: table-cell 
 
-@media (max-width: 960px)
+@media (max-width: 980px)
+
+  .content
+    width: 90%   
 
   .picture
     width: 300px 
@@ -76,7 +79,6 @@ section
   .page-artmax
     width: 100%
     flex-direction: table-cell 
-
   
   .article-vertikal 
     width: 100%
@@ -202,5 +204,5 @@ nav
   
   footer
     margin-left: 0px
-  
+    
   
