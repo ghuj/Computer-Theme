@@ -8,23 +8,27 @@ head
   link(rel="stylesheet", href="assets/css/main.css")
 body
   .page-home
-    section   
-      header.header
-        a.logo(href='index.html') 
-        input#menu-btn.menu-btn(type='checkbox')
-        label.menu-icon(for='menu-btn')
-          span.nav-icon
-        ul.menu
+    section 
+    #nav-background
+    #nav-container
+      header#nav-header
+        h1
+          a#nav-logo(href='#') FlexNav
+        #nav-menu-button MENU
+      nav
+        ul.nav-ul.hide-ul
           li
-            a(href='#dont') Home
+            a.nav-link.active-link(href='#') Home
           li
-            a(href='#forget') Holz Art
+            a.nav-link(href='#') News
           li
-            a(href='#subscribe') Buchstaben
+            a.nav-link(href='#') Contact
           li
-            a(href='#comment') &amp; Hausnummerschilder
-          li
-            a(href='#comment') &amp; Awards & Ehrentafeln
+            a.nav-link(href='#') About
+
+        
+            
+        
 
          
       .content

@@ -1,128 +1,137 @@
-.header
+
+
+#nav-container > nav > ul
+  list-style-type: none
+
+/* NAVIGATION
+
+#nav-background
+  position: fixed
+  top: 0
+  z-index: 9000
   width: 100%
-  height: 100px
-  //padding-top: 8px  
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1)
-  z-index: 3
+  background-color: white
+  border-bottom: 1px solid #ddd
 
-  .logo
-    width: 326px
-    height: 95px
-    background: 
-      image: url(../img/logo.jpg)
-      size: Contain
-      repeat: no-repeat
-      text-indent: -9999px
-      overflow: hidden
-    display: inline-block
-    //padding: 10px 20px
-    text-decoration: none
-    //flex-direction: column
-      a
-      display: block
-      height: 100%
+  /*
+   *box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2); */
 
-  
+#nav-container
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  max-width: 1000px
+  margin: 0 auto
+  -webkit-box-pack: justify
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  font-family: Arial, Helvetica, sans-serif
 
-/************ NAVIGATION ***********************/
-.header  
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1)  
-  width: 100%
-  z-index: 3
+#nav-header
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
 
-  ul
-    margin: 0
-    padding: 0
-    list-style: none
-    overflow: hidden
-    //background-color: #fff
+#nav-logo
+  color: #444
+  text-decoration: none
 
-    a
-      display: block
-      padding: 20px
-      //border-right: 1px solid #aaa
-      text-decoration: none
-      font-family: Arial, Helvetica, sans-serif
-      font-size: 15px
+  &:hover
+    color: #666
 
-      &:hover
-        background-color: #ddd
+.nav-ul
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  max-width: 700px
 
-  .logo
-    float: left
-    display: block
-    font-size: 2em
-    padding: 10px 20px
+  > li
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
 
-  .menu
-    clear: both
-    max-height: 0
-    transition: max-height .2s ease-out
+.nav-link
+  -webkit-box-flex: 1
+  -webkit-flex: 1
+  -ms-flex: 1
+  flex: 1
+  color: #444
+  text-decoration: none
+  font-weight: 600
+  font-size: 1.2rem
+  -webkit-transition: 200ms
+  transition: 200ms
 
-  .menu-icon
-    padding: 28px 20px
-    position: relative
-    float: right
+  &:hover
+    background-color: #f1f1f1
+
+.active-link
+  background-color: #f1f1f1
+
+/* END NAVIGATION
+
+/* MOBILE MENU
+@media screen and (max-width: 700px)
+  #nav-container
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    text-align: center
+
+  #nav-menu-button
+    padding: 1rem
+    background-color: #f1f1f1
     cursor: pointer
 
-    .nav-icon
-      background: $white
-      display: block
-      height: 2px
-      width: 18px
-      position: relative
-      transition: background .2s ease-out
+  .nav-ul
+    display: block
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    overflow: auto
+    direction: rtl
+    transition: max-height 400ms
+    max-height: 80vh
 
-      &:before
-        background: $white
-        content: ""
-        display: block
-        height: 100%
-        width: 100%
-        position: absolute
-        transition: all .2s ease-out
-        top: 5px
+  .hide-ul
+    max-height: 0
 
-      &:after
-        background: $white
-        content: ""
-        display: block
-        height: 100%
-        width: 100%
-        position: absolute
-        transition: all .2s ease-out
-        top: -5px
+  .nav-link
+    padding: 1rem 0
+    font-size: 1.3rem
+    border-bottom: 1px solid #f4f4f4
 
-  .menu-btn
+/* END MOBILE MENU
+
+/* DESKTOP MENU
+@media screen and (min-width: 701px)
+  #nav-menu-button
     display: none
 
-    &:checked ~
-      .menu
-        max-height: 240px
+  .nav-link
+    flex-basis: auto
+    padding: 1rem 1.5rem
 
-      .menu-icon .nav-icon
-        background: transparent
+/* This moves the logo so that it's not touching the left side
+@media screen and (max-width: 1040px)
+  #nav-logo
+    margin-left: 1rem
 
-        &:before
-          transform: rotate(-45deg)
-          top: 0
-
-        &:after
-          transform: rotate(45deg)
-          top: 0
-
-@media (min-width: 1005px)
-  .header
-    li
-      float: left
-
-      a
-        padding: 20px 9px
-
-    .menu
-      clear: none
-      float: right
-      max-height: none
-
-    .menu-icon
-      display: none
+/* END DESKTOP MENU
