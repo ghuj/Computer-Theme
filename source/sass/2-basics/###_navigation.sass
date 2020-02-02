@@ -1,0 +1,87 @@
+.header
+  width: 100%
+  height: 100px
+  //padding-top: 8px  
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1)
+  z-index: 3
+
+  .logo
+    width: 326px
+    height: 95px
+    background: 
+      image: url(../img/logo.jpg)
+      size: Contain
+      repeat: no-repeat
+      text-indent: -9999px
+      overflow: hidden
+    display: inline-block
+    //padding: 10px 20px
+    text-decoration: none
+    //flex-direction: column
+      a
+      display: block
+      height: 100%
+
+  
+
+/************ NAVIGATION ***********************/
+
+*
+  padding: 0px
+  margin: 0px
+  box-sizing: border-box
+
+.nav
+  //background: black
+  color: white
+  height: 70px
+  font-family: sans-serif
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+
+.nav-title
+  width: 30%
+  background: red
+  padding: 6px 0px
+  text-align: center
+
+.nav-menu
+  width: 70%
+
+  ul
+    display: flex
+    justify-content: flex-end
+
+    li
+      padding: 10px 20px
+      color: #ccc
+      font-size: 20px
+      list-style-type: none
+      cursor: pointer
+
+      &:hover
+        color: #fff
+        font-weight: bold
+
+/*style for responsive menu
+
+@media screen and (max-width: 1000px)
+  .nav
+    height: auto
+
+    .nav-title
+      text-align: left
+      width: 100%
+
+    .nav-menu
+      width: 100%
+
+      ul
+        justify-content: space-around
+
+        li
+          width: 20%
+          padding: 10px 0px
+          text-align: center
+          font-size: 16px  

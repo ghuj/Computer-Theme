@@ -9,17 +9,20 @@
 </head>
 <body>
   <div class="page-home">
-    <section>  
-      <header class="header"><a class="logo" href="index.html"> </a>
-        <input class="menu-btn" id="menu-btn" type="checkbox"/>
-        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-        <ul class="menu">
-          <li><a href="#dont">Home</a></li>
-          <li><a href="#forget">Holz Art</a></li>
-          <li><a href="#subscribe">Buchstaben</a></li>
-          <li><a href="#comment">&amp; Hausnummerschilder</a></li>
-          <li><a href="#comment">&amp; Awards & Ehrentafeln</a></li>
-        </ul>
+    <section> 
+      <h1 class="sr-only">Responsive Header with left logo and right menu</h1>
+      <header class="main-header">
+        <div class="container">
+          <h1 class="mh-logo">           </h1>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our clients</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <div class="content"><!-- h1| Holz Art--></div>
       <div class="footer-header"> 
@@ -83,13 +86,23 @@
       </div>
     </article>
   </section>
-  <div class="contact">
-    <p>Das ist ein Test</p>
-    <div class="contact-box"><input type="name" name="name" placeholder="Your Name">
-<input type="email" name="email" placeholder="Your email">
-<textarea name="message" placeholder="Test Message"></textarea>
-<button type="submit">Send Test</button>
-</form>
+  <div class="page-contact">
+    <div class="form-wrap">
+      <h3>// Contact</h3>
+      <div id="contact-wrapper">
+        <form id="contactform" method="post" action="">
+          <div class="name-wrap">
+            <input class="required" id="contactname" type="text" name="contactname" value="" placeholder="Name"/>
+          </div>
+          <div class="email-wrap">
+            <input class="required email" id="email" type="text" name="email" value="" placeholder="Email"/>
+          </div>
+          <div class="message-wrap">
+            <textarea class="required" id="message" name="message" placeholder="Message"></textarea>
+          </div>
+          <input type="submit" value="Submit" name="submit"/>
+        </form>
+      </div>
     </div>
   </div>
   <footer>
