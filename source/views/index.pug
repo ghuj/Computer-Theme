@@ -9,28 +9,21 @@ head
 body
   .page-home
     section 
-    #nav-background
-    #nav-container
-      header#nav-header
-        h1
-          a#nav-logo(href='#') FlexNav
-        #nav-menu-button MENU
-      nav
-        ul.nav-ul.hide-ul
-          li
-            a.nav-link.active-link(href='#') Home
-          li
-            a.nav-link(href='#') News
-          li
-            a.nav-link(href='#') Contact
-          li
-            a.nav-link(href='#') About
-
-        
-            
-        
-
-         
+      h1.sr-only Responsive Header with left logo and right menu
+      header.main-header
+        .container
+          h1.mh-logo            
+          nav.main-nav
+            ul.main-nav-list
+              li
+                a(href='#') Home
+              li
+                a(href='#') About us
+              li
+                a(href='#') Our clients
+              li
+                a(href='#') Contact
+ 
       .content
        <!-- h1| Holz Art-->
       .footer-header 
@@ -98,14 +91,18 @@ body
           img.picture(src='../assets/img/woodtype.jpg')    
           img.picture(src='../assets/img/woodtype.jpg') 
           img.picture(src='../assets/img/woodtype.jpg')     
-  .contact
-    p Das ist ein Test
-    .contact-box
-      <input type="name" name="name" placeholder="Your Name">
-      <input type="email" name="email" placeholder="Your email">
-      <textarea name="message" placeholder="Test Message"></textarea>
-      <button type="submit">Send Test</button>
-      </form>
+  .page-contact
+      .form-wrap
+        h3 // Contact
+        #contact-wrapper
+          form#contactform(method='post' action='')
+            .name-wrap
+              input#contactname.required(type='text' name='contactname' value='' placeholder='Name')
+            .email-wrap
+              input#email.required.email(type='text' name='email' value='' placeholder='Email')
+            .message-wrap
+              textarea#message.required(name='message' placeholder='Message')
+            input(type='submit' value='Submit' name='submit')
   footer
     .footer-nav
       img(src="../assets/img/footer-logo.svg", alt="")
