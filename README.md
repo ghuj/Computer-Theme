@@ -1,6 +1,6 @@
 # Project HolzArt
- 1.5.0
+ 2.6.1
 Projet in work  
 Autor:Thomas Lanza
-Datum: 17.9.2019
+Datum: 04.02.2020
 Projet in work
