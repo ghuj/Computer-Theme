@@ -516,7 +516,6 @@ input {
   width: 270px;
   padding: 10px;
   font-size: 18px;
-  font-family: "knul";
   background: white;
   color: #e33939;
   margin-bottom: 10px;
@@ -528,7 +527,6 @@ textarea {
   width: 270px;
   padding: 10px;
   font-size: 18px;
-  font-family: "knul";
   background: white;
   color: #e33939;
   margin-bottom: 10px;
@@ -616,6 +614,15 @@ section {
   background-image: url(../img/bg_header.jpg);
   background-repeat: none;
   background-size: cover;
+}
+
+.content h1 {
+  padding: 150px 0 0 0;
+  color: #fff;
+}
+
+.content p {
+  color: #fff;
 }
 
 .page-artmax {
