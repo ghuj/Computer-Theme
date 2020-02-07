@@ -516,7 +516,7 @@ input {
   width: 270px;
   padding: 10px;
   font-size: 18px;
-  background: white;
+  background: #fff;
   color: #e33939;
   margin-bottom: 10px;
   outline: none;
@@ -527,7 +527,7 @@ textarea {
   width: 270px;
   padding: 10px;
   font-size: 18px;
-  background: white;
+  background: #fff;
   color: #e33939;
   margin-bottom: 10px;
   outline: none;
@@ -545,7 +545,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background: #AFC73F;
-  color: black;
+  color: #111;
 }
 
 ::-webkit-input-placeholder, :-moz-placeholder {
