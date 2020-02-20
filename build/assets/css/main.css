@@ -412,9 +412,8 @@ html, body {
 .mh-logo {
   width: 226px;
   height: 95px;
-  background-image: url(../img/logo.jpg);
   background-size: Contain;
-  background-repeat: no-repeat;
+  background-repeat: none;
   margin: 0 0 -10px;
 }
 
@@ -499,7 +498,9 @@ img {
   position: relative;
   padding: 25px;
   color: #ebebeb;
-  background-image: url(../img/Contact.jpg);
+  background-image: url(../img/background_contact.jpg);
+  background-repeat: none;
+  background-size: Contain;
 }
 
 .page-contact h3 {
@@ -508,7 +509,10 @@ img {
 }
 
 #contact-wrapper {
-  margin: 20px 335px 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 input {
@@ -633,12 +637,6 @@ section {
   display: table-cell;
 }
 
-.page-logo {
-  max-width: 540px;
-  height: 100%;
-  margin-top: 40px;
-}
-
 .article-vertikal {
   float: left;
   width: 50%;
@@ -686,8 +684,7 @@ article {
 }
 
 footer {
-  height: 285px;
-  background-color: #373A39;
+  background-color: #111;
   display: block;
   text-align: center;
 }
@@ -721,13 +718,6 @@ nav li a {
 nav li a:hover {
   color: #fff;
   text-decoration: underline;
-}
-
-.footer-end {
-  height: 104px;
-  padding-top: 112px;
-  text-align: center;
-  background-color: #111;
 }
 
 * {
